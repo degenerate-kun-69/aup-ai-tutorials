@@ -1,6 +1,6 @@
 # Run on AMD Developer Cloud
 
-Run these notebook series on the AMD Developer Cloud
+Run Retrieval Augmented Generation notebook series on the AMD Developer Cloud.
 
 [![Open in AMD Developer Cloud](https://img.shields.io/badge/Open_in_AMD_Developer_Cloud-000000?logo=amd&logoSize=auto)](https://amd-ai-academy.com/github/AMDResearch/aup-ai-tutorials/blob/main/rag)
 
