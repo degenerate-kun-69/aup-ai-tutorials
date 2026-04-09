@@ -71,7 +71,7 @@ def aup_setup() -> None:
     logging.info("Pip packages installed %s.", message_string(proc))
 
     file = 'resnet_trained_for_cifar10.onnx'
-    base_url = "https://github.com/AMDResearch/aup-ai-tutorials/raw/refs/heads/main/quant/onnx/resnet_trained_for_cifar10.onnx"
+    base_url = f"https://github.com/AMDResearch/aup-ai-tutorials/raw/refs/heads/main/quant/onnx/{file}"
     onnx_dir = os.path.join(workspace_dir, "onnx")
     file_path = os.path.join(onnx_dir, file)
     if not os.path.isfile(file_path):
@@ -80,9 +80,9 @@ def aup_setup() -> None:
         if response.status_code == 200:
             with open(file_path, 'wb') as file_handle:
                 file_handle.write(response.content)
-        logging.info("Pretrained Resnet model downloaded %s.", message_string(file))
+        logging.info("Pretrained Resnet model %s downloaded.", file)
 
-    return None
+    return
 
 
 if __name__ == "__main__":
